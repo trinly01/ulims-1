@@ -70,6 +70,10 @@ class StatisticController extends Controller
 	            	'header'=>'CUSTOMER / COMPANY / FIRM',
 	            ),
 	        	'customer.address',
+	        	'customer.region', // added region field [Trinmar A. Boado]
+	        	'customer.province', // added province field [Trinmar A. Boado]
+	        	'customer.towncity', // added town/City field [Trinmar A. Boado]
+	        	'customer.districtnum', // added District Number field [Trinmar A. Boado]
 	        	'customer.tel',
 	        	'request_count',
 	        	'chemSamples',

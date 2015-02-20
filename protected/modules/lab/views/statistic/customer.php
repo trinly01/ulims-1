@@ -72,6 +72,30 @@ Yii::app()->clientScript->registerScript('customs', "
 				'header'=>'ADDRESS',
 				'headerHtmlOptions' => array('rowspan' => 2),
 			),
+	// added Region field [Trinmar A. Boado]
+	array(
+				'name'=>'customer.region',
+				'header'=>'Region',
+				'headerHtmlOptions' => array('rowspan' => 2),
+			),
+        // added Province field [Trinmar A. Boado]
+	array(
+				'name'=>'customer.province',
+				'header'=>'Province',
+				'headerHtmlOptions' => array('rowspan' => 2),
+			),
+	// added Region field [Trinmar A. Boado]            
+	array(
+				'name'=>'customer.towncity',
+				'header'=>'Town/City',
+				'headerHtmlOptions' => array('rowspan' => 2),
+			),
+	// added District Number field [Trinmar A. Boado]            
+	array(
+				'name'=>'customer.districtnum',
+				'header'=>'District',
+				'headerHtmlOptions' => array('rowspan' => 2),
+			),
 			array(
 				'name'=>'customer.tel',
 				'header'=>'CONTACT DETAILS',

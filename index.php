@@ -1,5 +1,8 @@
 <?php
+// setting the error reporting excepting E_NOTICE [Trinmar A. Boado]
 error_reporting('E_ALL && ~E_NOTICE');
+// setting the timezone to Manila, Philippines [Trinmar A. Boado]
+date_default_timezone_set('Asia/Manila');
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';

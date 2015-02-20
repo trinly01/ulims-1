@@ -172,5 +172,25 @@ class Customer extends CActiveRecord
 		//}
 		
 		return $completeAddress;		
-	}	
+	}
+	// get Region [Trinmar A. Boado]
+	public function getRegion()
+	{
+		return $RegionName= Region::model()->findByPk(MunicipalityCity::model()->findByPk($this->municipalitycity_id)->regionId)->code." - ".Region::model()->findByPk(MunicipalityCity::model()->findByPk($this->municipalitycity_id)->regionId)->name;		
+	}
+    // get Province [Trinmar A. Boado]
+    public function getProvince()
+	{
+		return $provinceName=Province::model()->findByPk(MunicipalityCity::model()->findByPk($this->municipalitycity_id)->provinceId)->name;		
+	}
+    // get Town/City [Trinmar A. Boado]
+    public function getTownCity()
+	{
+		return MunicipalityCity::model()->findByPk($this->municipalitycity_id)->name;
+	}
+    // get District Number [Trinmar A. Boado]
+    public function getDistrictNum()
+	{
+		return MunicipalityCity::model()->findByPk($this->municipalitycity_id)->district;		
+	}
 }
